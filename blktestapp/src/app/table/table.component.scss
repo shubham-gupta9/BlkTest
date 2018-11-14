@@ -1,0 +1,20 @@
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+::ng-deep{
+body .ui-table .ui-table-tbody > tr > th{
+    border:0;
+}
+
+body .ui-table .ui-table-tbody > tr > td{
+    border:0;
+}
+}
+
+// body .ui-table .ui-table-tbody > tr.ui-state-highlight{
+//     background-color: #eeeeee ;
+//          color: #000000;
+// }

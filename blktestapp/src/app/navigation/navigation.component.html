@@ -1,0 +1,26 @@
+<div class="backcolor">
+
+  <div class="margin"> 
+  <h1>{{title}}</h1>
+
+  <mat-form-field  class="width-inc">
+      <mat-select class="mytext" placeholder="" [(ngModel)]="selectedItem" name="food">
+        <mat-option *ngFor="let item of list" [value]="item">
+          {{item}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+</div>
+
+<nav mat-tab-nav-bar [color]="white"> 
+  <a mat-tab-link
+     *ngFor="let link of navLinks"
+     [routerLink]="link.url"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive"
+     ng-class="{activeColor: rla.isActive}"
+     >
+     {{link.name}}
+  </a>
+</nav>
+</div>

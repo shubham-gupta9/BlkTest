@@ -1,0 +1,51 @@
+@mixin color($color, $font-color) {
+    background-color: $color;
+    color: $font-color;
+}
+
+@mixin fontColor($font-color) {
+    color: $font-color;
+}
+::ng-deep{
+.backcolor{
+@include color(#00003c, #FFFFFF);
+}
+
+.tabColor{
+    @include fontColor(white);
+}
+
+.mat-tab-link{
+    @include fontColor(white);
+}
+
+.margin{
+    margin-left: 5vw;
+}
+
+
+
+.mat-select-arrow{
+    color:grey;
+}
+
+.mat-tab-label-active{
+    color: #65b9ff;
+}
+
+.mat-form-field-infix{
+        width: 400px;
+}
+
+.width-inc{
+    width:40% !important;
+}
+
+.mat-select-value{
+    @include fontColor(grey);
+}      
+}
+
+.mytext{   
+    font-size: 40px;
+}
